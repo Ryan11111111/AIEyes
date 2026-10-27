@@ -1,0 +1,80 @@
+{
+  "generatedAt": "2026-10-27T08:31:40.558Z",
+  "nextRefreshAt": "2026-10-27T22:10:00.000Z",
+  "timezone": "Asia/Shanghai",
+  "upstreamUpdatedAt": "2026-10-23T00:00:00.000Z",
+  "fx": {
+    "usdCny": 6.6681,
+    "source": "api.frankfurter.dev",
+    "date": "2026-10-26",
+    "status": "ok"
+  },
+  "stats": {
+    "rankedModels": 384,
+    "apiModels": 1067,
+    "plans": 40,
+    "vendors": 32,
+    "domesticModels": 121,
+    "globalModels": 263,
+    "openWeights": 237,
+    "freeApiModels": 53,
+    "medianOutputPrice": 0.9,
+    "cheapestDomesticPlan": {
+      "product": "百度千帆 Token Plan",
+      "price": 9.9,
+      "currency": "CNY"
+    },
+    "topModel": {
+      "name": "Gemini 4 Argon",
+      "vendor": "Google",
+      "score": 1525.73
+    },
+    "platformVendors": 37,
+    "arenaModels": 362,
+    "pelicanModels": 7,
+    "pelicanSamples": 139
+  },
+  "sources": [
+    {
+      "id": "lmarena",
+      "name": "LMArena Leaderboard",
+      "url": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
+      "status": "ok",
+      "checkedAt": "2026-10-27T08:31:40.402Z",
+      "note": "文本 / 代码 / Agent 三个社区盲测榜；CC BY 4.0；经 HF 镜像抓取"
+    },
+    {
+      "id": "litellm",
+      "name": "LiteLLM Model Prices",
+      "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
+      "status": "ok",
+      "checkedAt": "2026-10-27T08:31:34.330Z",
+      "note": "单模型公开标价、上下文、模态与工具能力；MIT；按模型去重"
+    },
+    {
+      "id": "fx",
+      "name": "USD → CNY 汇率",
+      "url": "https://api.frankfurter.dev/v1/latest?base=USD&symbols=CNY",
+      "status": "ok",
+      "checkedAt": "2026-10-27T08:31:40.558Z",
+      "note": "1 USD ≈ 6.6681 CNY（api.frankfurter.dev，ECB 参考汇率）"
+    },
+    {
+      "id": "pelican",
+      "name": "Pelican SVG Drawings",
+      "url": "https://huggingface.co/datasets/sergiopaniego/pelican-svg-drawings",
+      "status": "ok",
+      "checkedAt": "2026-10-27T08:31:34.778Z",
+      "note": "7 个模型 × 约 20 次鹈鹕 SVG；Apache-2.0"
+    },
+    {
+      "id": "plans",
+      "name": "Coding 套餐人工核对",
+      "url": "",
+      "status": "curated",
+      "checkedAt": "2026-10-23",
+      "note": "基于厂商官方定价页与公开横评逐项核对，促销价单独标注"
+    }
+  ],
+  "disclaimer": "排名来自 LMArena 社区盲测（CC BY 4.0），API 标价来自 LiteLLM 开放价格库（MIT），汇率来自 Frankfurter / ECB，鹈鹕测试来自 HuggingFace 数据集（Apache-2.0），Coding 套餐为人工核对。不同榜单口径不可直接混排，价格与权益可能随时调整，购买前请以厂商官方页面为准。"
+}
