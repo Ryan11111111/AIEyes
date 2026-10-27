@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#070a0f" />
+    <meta
+      name="description"
+      content="AI Eyes：基于 LMArena 社区盲测榜与 LiteLLM 开放价格库的全球 AI 模型排名、API 价格，以及国内外 AI Coding 套餐对比。"
+    />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <title>AI Eyes · 全球模型排名与 Coding 价格雷达</title>
+  </head>
+  <body>
+    <div id="root">
+      <div class="loading-screen">
+        <div class="loading-mark">
+          <svg width="54" height="54" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+            <circle cx="20" cy="20" r="18.25" stroke="currentColor" stroke-opacity=".24" />
+            <path d="M6 20c3.9-6.2 8.6-9.3 14-9.3S30.1 13.8 34 20c-3.9 6.2-8.6 9.3-14 9.3S9.9 26.2 6 20Z" stroke="currentColor" stroke-width="1.5" />
+            <circle cx="20" cy="20" r="5.2" stroke="currentColor" stroke-width="1.5" />
+            <circle cx="20" cy="20" r="1.8" fill="currentColor" />
+            <path d="M20 1.8v4.4M20 33.8v4.4M1.8 20h4.4M33.8 20h4.4" stroke="currentColor" stroke-opacity=".45" stroke-width="1.2" stroke-linecap="round" />
+          </svg>
+        </div>
+        <span class="loading-brand">AI EYES</span>
+        <p>正在校准模型雷达…</p>
+        <div class="loading-bar"><i></i></div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
