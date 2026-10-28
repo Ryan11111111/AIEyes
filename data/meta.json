@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-10-27T08:31:40.558Z",
-  "nextRefreshAt": "2026-10-27T22:10:00.000Z",
+  "generatedAt": "2026-10-28T02:07:24.558Z",
+  "nextRefreshAt": "2026-10-28T22:10:00.000Z",
   "timezone": "Asia/Shanghai",
   "upstreamUpdatedAt": "2026-10-23T00:00:00.000Z",
   "fx": {
-    "usdCny": 6.6681,
+    "usdCny": 6.6675,
     "source": "api.frankfurter.dev",
-    "date": "2026-10-26",
+    "date": "2026-10-27",
     "status": "ok"
   },
   "stats": {
     "rankedModels": 384,
-    "apiModels": 1067,
+    "apiModels": 1074,
     "plans": 40,
     "vendors": 32,
     "domesticModels": 121,
@@ -40,7 +40,7 @@
       "name": "LMArena Leaderboard",
       "url": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
       "status": "ok",
-      "checkedAt": "2026-10-27T08:31:40.402Z",
+      "checkedAt": "2026-10-28T02:07:24.495Z",
       "note": "文本 / 代码 / Agent 三个社区盲测榜；CC BY 4.0；经 HF 镜像抓取"
     },
     {
@@ -48,7 +48,7 @@
       "name": "LiteLLM Model Prices",
       "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
       "status": "ok",
-      "checkedAt": "2026-10-27T08:31:34.330Z",
+      "checkedAt": "2026-10-28T02:07:23.583Z",
       "note": "单模型公开标价、上下文、模态与工具能力；MIT；按模型去重"
     },
     {
@@ -56,15 +56,15 @@
       "name": "USD → CNY 汇率",
       "url": "https://api.frankfurter.dev/v1/latest?base=USD&symbols=CNY",
       "status": "ok",
-      "checkedAt": "2026-10-27T08:31:40.558Z",
-      "note": "1 USD ≈ 6.6681 CNY（api.frankfurter.dev，ECB 参考汇率）"
+      "checkedAt": "2026-10-28T02:07:24.558Z",
+      "note": "1 USD ≈ 6.6675 CNY（api.frankfurter.dev，ECB 参考汇率）"
     },
     {
       "id": "pelican",
       "name": "Pelican SVG Drawings",
       "url": "https://huggingface.co/datasets/sergiopaniego/pelican-svg-drawings",
       "status": "ok",
-      "checkedAt": "2026-10-27T08:31:34.778Z",
+      "checkedAt": "2026-10-28T02:07:24.056Z",
       "note": "7 个模型 × 约 20 次鹈鹕 SVG；Apache-2.0"
     },
     {
