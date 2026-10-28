@@ -1,6 +1,6 @@
 # 项目状态记录
 
-更新于 2026-10-27。
+更新于 2026-10-28。
 
 ## 结论
 
@@ -30,12 +30,19 @@
 | GitHub 仓库 | public：<https://github.com/Ryan11111111/AIEyes> |
 | GitHub Pages | 已上线：<https://Ryan11111111.github.io/AIEyes/>，来源 `gh-pages` / 根目录 |
 | 单文件分享版 | 可选备份：<https://artifacts.commandcode.ai/23da4fv0v5emp5sl>（7 天有效期） |
-| GitHub Actions | 无 workflow 文件；Pages 从 `gh-pages` 分支构建，非 Actions 部署 |
+| GitHub Actions | `.github/workflows/daily-refresh.yml`：每天 UTC 22:37 定时刷新，推送代码/构建相关路径时也触发；构建后推送 `gh-pages` |
 | 本机 cron | 未安装 |
 | `public/data/` | 本地生成，已 `.gitignore`；构建后的快照发布在 `gh-pages` |
 | `artifact/` | 本地生成，已 `.gitignore` |
 | 第三方许可 | `LICENSE`、`THIRD_PARTY_DATA.md`、`LICENSES/` 已补齐 |
 | Git 历史 | `main` 为单条干净提交 `6695f2a`；旧历史仅本地备份与 tag |
+
+## 2026-10-28 执行的变更
+
+- 新增 `.github/workflows/daily-refresh.yml`：每天 UTC 22:37（北京 06:37）刷新数据并发布 `gh-pages`。
+- 支持 `workflow_dispatch` 手动触发，以及推送 `main` 的代码/构建相关路径时触发。
+- 使用 `actions/cache` 复用 `data/.cache`，单源失败时回退最近缓存。
+- 首次 push 触发与手动触发均验证成功：数据源全部 `ok`，`gh-pages` 正常更新。
 
 ## 2026-10-27 执行的变更
 
@@ -57,7 +64,7 @@
 - [x] 补 `LICENSE`、`THIRD_PARTY_DATA.md`、`LICENSES/`；CC BY 4.0 数据附许可链接和修改说明。
 - [x] 删除“生态最完整”“IDE 覆盖最广”“模型最全”“国内免费首选”“最低月费”“国内最低”等绝对化用语。
 - [ ] CI 恢复前加入数据缓存、schema/数量校验，并在关键来源失败时不部署。
-- [ ] 当前发布是手动构建后推送 `gh-pages`，尚未恢复自动部署。
+- [x] 已恢复自动部署：GitHub Actions 每天刷新并推送 `gh-pages`；数据源缓存使用 `actions/cache`。
 - [ ] 复核隐私、ICP、广告法等问题（GitHub Pages 托管条款已通过实际启用确认可用）。
 - [x] 将仓库重新公开；`main` 已改写为单条干净提交，旧历史未推送。
 

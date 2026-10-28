@@ -4,7 +4,7 @@
 
 ![Status](https://img.shields.io/badge/status-live-5bd6a2) ![Stack](https://img.shields.io/badge/stack-React%2019%20%2B%20Vite-79c8ff) ![Data](https://img.shields.io/badge/data-open%20licenses-5bd6a2)
 
-> **当前状态（2026-10-27）**：数据源已替换为许可明确、允许再分发的公开来源：LMArena（CC BY 4.0）、LiteLLM（MIT）、Frankfurter / ECB 与 HuggingFace Pelican（Apache-2.0）。仓库已重新公开，公开站点：<https://Ryan11111111.github.io/AIEyes/>。历史已重写为单条干净提交，旧历史仅保留在本地备份（未推送）。
+> **当前状态（2026-10-28）**：数据源已替换为许可明确、允许再分发的公开来源：LMArena（CC BY 4.0）、LiteLLM（MIT）、Frankfurter / ECB 与 HuggingFace Pelican（Apache-2.0）。仓库已重新公开，公开站点：<https://Ryan11111111.github.io/AIEyes/>。每日 UTC 22:37（北京 06:37）由 GitHub Actions 自动刷新数据并发布 `gh-pages`。
 >
 > 数据许可与修改说明见 [THIRD_PARTY_DATA.md](THIRD_PARTY_DATA.md)，页面操作见 [docs/usage.md](docs/usage.md)，状态记录见 [docs/status.md](docs/status.md)。
 >
@@ -61,7 +61,12 @@ npm run artifact     # artifact/AI-Eyes.html
 
 - 公开站点：<https://Ryan11111111.github.io/AIEyes/>
 - Pages 来源：`gh-pages` 分支 / 根目录
-- 当前没有自动部署 workflow；更新数据后依次运行 `npm run refresh`、`npm run build`，再把 `dist/` 内容提交到 `gh-pages` 并推送。
+- 自动部署：`.github/workflows/daily-refresh.yml`
+  - 每天 UTC 22:37（北京 06:37）定时运行
+  - 推送 `main` 的代码/构建相关路径时也会触发
+  - 流程：`npm ci` → `npm run refresh` → `npm run build` → 推送 `dist/` 到 `gh-pages`
+  - 可在 Actions 页面手动 Run workflow
+- 手动更新：运行 `npm run refresh`、`npm run build`，再把 `dist/` 内容提交到 `gh-pages` 并推送。
 
 ### 可选：GitHub token
 
@@ -108,17 +113,19 @@ GITHUB_TOKEN=github_pat_xxx
 ## 数据刷新与容错
 
 - 每个数据源最多重试 3 次，单次超时 60 秒。
-- 成功抓取的内容缓存在 `data/.cache/`。
+- 成功抓取的内容缓存在 `data/.cache/`；GitHub Actions 通过 `actions/cache` 在运行之间复用缓存。
 - 抓取失败时自动读取最近成功缓存，`meta.json` 中对应来源状态标记为 `cached`。
 - 汇率接口失败时依次回退 `frankfurter.app` 与内置兜底汇率。
 - 页面顶部和“数据源”区展示本次生成时间、建议刷新时间与 LMArena 榜期。
 
-> 2026-10-27 起没有 GitHub Actions 定时任务，也没有本机 cron。`meta.json` 中的 `nextRefreshAt` 只是建议刷新节奏，不会自动执行。
+> 线上数据每天由 GitHub Actions 自动刷新（UTC 22:37 / 北京 06:37）并发布到 `gh-pages`。`meta.json` 中的 `nextRefreshAt` 只是建议节奏，实际执行以 workflow 定时为准。
 
 ## 项目结构
 
 ```text
 AIEyes/
+├── .github/workflows/
+│   └── daily-refresh.yml    # 每日自动刷新并发布 gh-pages
 ├── src/
 │   ├── components/          # Hero、模型榜、LMArena、鹈鹕、象限图、套餐、API 表等
 │   ├── lib/                 # 类型、数据加载、格式化
@@ -128,8 +135,8 @@ AIEyes/
 │   ├── refresh-data.mjs     # LMArena / LiteLLM / 汇率 / 鹈鹕抓取与数据合并
 │   ├── build-artifact.mjs   # 生成内嵌数据的单文件 HTML
 │   ├── serve.mjs            # 静态预览服务器
-│   ├── daily-refresh.sh     # 历史脚本（当前未安装 cron）
-│   └── install-cron.sh      # 历史脚本（当前未执行）
+│   ├── daily-refresh.sh     # 本机手动刷新脚本（可选，线上由 Actions 执行）
+│   └── install-cron.sh      # 本机 cron 安装脚本（可选，当前未使用）
 ├── docs/
 │   ├── usage.md             # 页面使用说明
 │   ├── roadmap.md           # 后续计划

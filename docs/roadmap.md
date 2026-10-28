@@ -1,8 +1,8 @@
 # 下一步计划
 
-更新于 2026-10-27。
+更新于 2026-10-28。
 
-> 当前状态：数据源已完成换源，仓库已公开，GitHub Pages 已上线：<https://Ryan11111111.github.io/AIEyes/>。`main` 为单条干净提交，静态站点由 `gh-pages` 分支发布；状态详见 [status.md](status.md)。
+> 当前状态：数据源已完成换源，仓库已公开，GitHub Pages 已上线：<https://Ryan11111111.github.io/AIEyes/>。静态站点由 `gh-pages` 分支发布，每天由 GitHub Actions 自动刷新；状态详见 [status.md](status.md)。
 
 ## 0. 重新公开前置条件
 
@@ -14,7 +14,7 @@
 - [x] 仓库转公开并启用 GitHub Pages（`gh-pages` / 根目录）。
 - [ ] CI 恢复前加入数据缓存、schema/数量校验，并在关键来源失败时不部署。
 - [ ] 复核隐私、ICP、广告法等问题。
-- [ ] 决定是否恢复自动刷新/自动部署；当前为手动构建后推送 `gh-pages`。
+- [x] 恢复自动刷新/自动部署：GitHub Actions 每天 UTC 22:37 刷新并推送 `gh-pages`。
 
 ## 1. 解决页面打开慢
 
@@ -42,7 +42,7 @@
 
 - [ ] 若主要面向国内访问，测试各托管平台的访问速度；国内对象存储 + CDN 需要自定义域名备案。
 - [ ] 只有当需要服务端能力（鉴权、私有数据、脱离本机的定时任务）时，再考虑 VPS。
-- [ ] 如果要恢复自动刷新，优先用 GitHub Actions 的 `GITHUB_TOKEN`（仅 GitHub 域名）并加入失败保护。
+- [x] 已用 GitHub Actions 恢复自动刷新：`GITHUB_TOKEN` 仅用于 Git 操作，数据源抓取不需要 token；已加入数据源缓存与失败回退。
 
 ## 3. 是否注册域名
 

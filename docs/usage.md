@@ -119,10 +119,10 @@ npm run artifact    # 生成单文件分享版 artifact/AI-Eyes.html（本地，
 npm run serve       # 本地静态预览 http://127.0.0.1:4173
 ```
 
-- 当前没有 GitHub Actions 定时任务，也没有本机 cron；`建议刷新`只是提示，不会自动执行。
+- 线上数据每天由 GitHub Actions 自动刷新（UTC 22:37 / 北京 06:37）并发布到 `gh-pages`；推送 `main` 的代码/构建相关路径也会触发。`建议刷新`只是提示，实际执行以 workflow 为准。
 - 需要提高 GitHub 请求限额时，在项目根目录 `.env.local` 写入 `GITHUB_TOKEN=...`；该文件已被 `.gitignore` 忽略，token 只发送给 GitHub 域名。
 - `public/data/` 和 `artifact/` 不随 `main` 提交；公开站点通过 `gh-pages` 分支发布构建后的快照。
-- 更新线上数据：运行 `npm run refresh && npm run build`，再把 `dist/` 内容提交到 `gh-pages` 并推送。当前没有自动部署 workflow。
+- 手动更新线上数据：运行 `npm run refresh && npm run build`，再把 `dist/` 内容提交到 `gh-pages` 并推送；日常更新由 GitHub Actions 自动完成。
 - 分享单文件时请保留页面底部与“数据源”区的许可与署名。
 
 ## 常见问题
