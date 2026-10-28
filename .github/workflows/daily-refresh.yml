@@ -3,6 +3,17 @@ name: Daily data refresh
 on:
   schedule:
     - cron: "37 22 * * *"
+  push:
+    branches: [main]
+    paths:
+      - "src/**"
+      - "scripts/**"
+      - "public/**"
+      - "package.json"
+      - "package-lock.json"
+      - "vite.config.*"
+      - "index.html"
+      - ".github/workflows/daily-refresh.yml"
   workflow_dispatch:
 
 permissions:
@@ -28,6 +39,14 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+
+      - name: Cache source data
+        uses: actions/cache@v4
+        with:
+          path: data/.cache
+          key: ai-eyes-cache-${{ github.run_id }}
+          restore-keys: |
+            ai-eyes-cache-
 
       - name: Refresh data
         run: npm run refresh
