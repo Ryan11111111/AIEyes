@@ -1,36 +1,36 @@
 {
-  "generatedAt": "2026-10-29T01:55:55.827Z",
-  "nextRefreshAt": "2026-10-29T22:10:00.000Z",
+  "generatedAt": "2026-10-30T02:07:29.020Z",
+  "nextRefreshAt": "2026-10-30T22:10:00.000Z",
   "timezone": "Asia/Shanghai",
-  "upstreamUpdatedAt": "2026-10-27T00:00:00.000Z",
+  "upstreamUpdatedAt": "2026-10-28T00:00:00.000Z",
   "fx": {
-    "usdCny": 6.6664,
+    "usdCny": 6.6616,
     "source": "api.frankfurter.dev",
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "status": "ok"
   },
   "stats": {
-    "rankedModels": 385,
-    "apiModels": 1094,
+    "rankedModels": 386,
+    "apiModels": 1102,
     "plans": 40,
     "vendors": 32,
     "domesticModels": 121,
-    "globalModels": 264,
-    "openWeights": 237,
+    "globalModels": 265,
+    "openWeights": 238,
     "freeApiModels": 53,
-    "medianOutputPrice": 0.95,
+    "medianOutputPrice": 0.97,
     "cheapestDomesticPlan": {
       "product": "百度千帆 Token Plan",
       "price": 9.9,
       "currency": "CNY"
     },
     "topModel": {
-      "name": "Gemini 4 Argon",
+      "name": "Gemini 4 Carbon",
       "vendor": "Google",
-      "score": 1525.73
+      "score": 1540.04
     },
     "platformVendors": 37,
-    "arenaModels": 362,
+    "arenaModels": 363,
     "pelicanModels": 7,
     "pelicanSamples": 139
   },
@@ -40,7 +40,7 @@
       "name": "LMArena Leaderboard",
       "url": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
       "status": "ok",
-      "checkedAt": "2026-10-29T01:55:55.746Z",
+      "checkedAt": "2026-10-30T02:07:28.938Z",
       "note": "文本 / 代码 / Agent 三个社区盲测榜；CC BY 4.0；经 HF 镜像抓取"
     },
     {
@@ -48,7 +48,7 @@
       "name": "LiteLLM Model Prices",
       "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
       "status": "ok",
-      "checkedAt": "2026-10-29T01:55:54.676Z",
+      "checkedAt": "2026-10-30T02:07:27.964Z",
       "note": "单模型公开标价、上下文、模态与工具能力；MIT；按模型去重"
     },
     {
@@ -56,15 +56,15 @@
       "name": "USD → CNY 汇率",
       "url": "https://api.frankfurter.dev/v1/latest?base=USD&symbols=CNY",
       "status": "ok",
-      "checkedAt": "2026-10-29T01:55:55.827Z",
-      "note": "1 USD ≈ 6.6664 CNY（api.frankfurter.dev，ECB 参考汇率）"
+      "checkedAt": "2026-10-30T02:07:29.020Z",
+      "note": "1 USD ≈ 6.6616 CNY（api.frankfurter.dev，ECB 参考汇率）"
     },
     {
       "id": "pelican",
       "name": "Pelican SVG Drawings",
       "url": "https://huggingface.co/datasets/sergiopaniego/pelican-svg-drawings",
       "status": "ok",
-      "checkedAt": "2026-10-29T01:55:55.292Z",
+      "checkedAt": "2026-10-30T02:07:28.415Z",
       "note": "7 个模型 × 约 20 次鹈鹕 SVG；Apache-2.0"
     },
     {
