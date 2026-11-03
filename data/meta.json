@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-02T01:46:14.526Z",
-  "nextRefreshAt": "2026-11-02T22:10:00.000Z",
+  "generatedAt": "2026-11-03T03:40:48.655Z",
+  "nextRefreshAt": "2026-11-03T22:10:00.000Z",
   "timezone": "Asia/Shanghai",
   "upstreamUpdatedAt": "2026-10-28T00:00:00.000Z",
   "fx": {
-    "usdCny": 6.6529,
+    "usdCny": 6.6483,
     "source": "api.frankfurter.dev",
-    "date": "2026-10-30",
+    "date": "2026-11-02",
     "status": "ok"
   },
   "stats": {
@@ -40,7 +40,7 @@
       "name": "LMArena Leaderboard",
       "url": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
       "status": "ok",
-      "checkedAt": "2026-11-02T01:46:14.430Z",
+      "checkedAt": "2026-11-03T03:40:48.542Z",
       "note": "文本 / 代码 / Agent 三个社区盲测榜；CC BY 4.0；经 HF 镜像抓取"
     },
     {
@@ -48,7 +48,7 @@
       "name": "LiteLLM Model Prices",
       "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
       "status": "ok",
-      "checkedAt": "2026-11-02T01:46:13.742Z",
+      "checkedAt": "2026-11-03T03:40:47.918Z",
       "note": "单模型公开标价、上下文、模态与工具能力；MIT；按模型去重"
     },
     {
@@ -56,15 +56,15 @@
       "name": "USD → CNY 汇率",
       "url": "https://api.frankfurter.dev/v1/latest?base=USD&symbols=CNY",
       "status": "ok",
-      "checkedAt": "2026-11-02T01:46:14.526Z",
-      "note": "1 USD ≈ 6.6529 CNY（api.frankfurter.dev，ECB 参考汇率）"
+      "checkedAt": "2026-11-03T03:40:48.655Z",
+      "note": "1 USD ≈ 6.6483 CNY（api.frankfurter.dev，ECB 参考汇率）"
     },
     {
       "id": "pelican",
       "name": "Pelican SVG Drawings",
       "url": "https://huggingface.co/datasets/sergiopaniego/pelican-svg-drawings",
       "status": "ok",
-      "checkedAt": "2026-11-02T01:46:14.247Z",
+      "checkedAt": "2026-11-03T03:40:48.461Z",
       "note": "7 个模型 × 约 20 次鹈鹕 SVG；Apache-2.0"
     },
     {
