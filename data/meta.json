@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-11-05T02:43:56.971Z",
-  "nextRefreshAt": "2026-11-05T22:10:00.000Z",
+  "generatedAt": "2026-11-06T02:46:53.538Z",
+  "nextRefreshAt": "2026-11-06T22:10:00.000Z",
   "timezone": "Asia/Shanghai",
-  "upstreamUpdatedAt": "2026-11-02T00:00:00.000Z",
+  "upstreamUpdatedAt": "2026-11-04T00:00:00.000Z",
   "fx": {
-    "usdCny": 6.6723,
+    "usdCny": 6.6684,
     "source": "api.frankfurter.dev",
-    "date": "2026-11-04",
+    "date": "2026-11-05",
     "status": "ok"
   },
   "stats": {
-    "rankedModels": 386,
-    "apiModels": 1162,
+    "rankedModels": 387,
+    "apiModels": 1165,
     "plans": 40,
     "vendors": 32,
-    "domesticModels": 121,
+    "domesticModels": 122,
     "globalModels": 265,
     "openWeights": 239,
     "freeApiModels": 53,
@@ -40,7 +40,7 @@
       "name": "LMArena Leaderboard",
       "url": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
       "status": "ok",
-      "checkedAt": "2026-11-05T02:43:56.890Z",
+      "checkedAt": "2026-11-06T02:46:53.423Z",
       "note": "文本 / 代码 / Agent 三个社区盲测榜；CC BY 4.0；经 HF 镜像抓取"
     },
     {
@@ -48,7 +48,7 @@
       "name": "LiteLLM Model Prices",
       "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
       "status": "ok",
-      "checkedAt": "2026-11-05T02:43:56.342Z",
+      "checkedAt": "2026-11-06T02:46:52.976Z",
       "note": "单模型公开标价、上下文、模态与工具能力；MIT；按模型去重"
     },
     {
@@ -56,15 +56,15 @@
       "name": "USD → CNY 汇率",
       "url": "https://api.frankfurter.dev/v1/latest?base=USD&symbols=CNY",
       "status": "ok",
-      "checkedAt": "2026-11-05T02:43:56.971Z",
-      "note": "1 USD ≈ 6.6723 CNY（api.frankfurter.dev，ECB 参考汇率）"
+      "checkedAt": "2026-11-06T02:46:53.538Z",
+      "note": "1 USD ≈ 6.6684 CNY（api.frankfurter.dev，ECB 参考汇率）"
     },
     {
       "id": "pelican",
       "name": "Pelican SVG Drawings",
       "url": "https://huggingface.co/datasets/sergiopaniego/pelican-svg-drawings",
       "status": "ok",
-      "checkedAt": "2026-11-05T02:43:56.528Z",
+      "checkedAt": "2026-11-06T02:46:53.251Z",
       "note": "7 个模型 × 约 20 次鹈鹕 SVG；Apache-2.0"
     },
     {
