@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-07T02:19:51.839Z",
-  "nextRefreshAt": "2026-11-07T22:10:00.000Z",
+  "generatedAt": "2026-11-08T01:46:37.831Z",
+  "nextRefreshAt": "2026-11-08T22:10:00.000Z",
   "timezone": "Asia/Shanghai",
-  "upstreamUpdatedAt": "2026-11-04T00:00:00.000Z",
+  "upstreamUpdatedAt": "2026-11-06T00:00:00.000Z",
   "fx": {
     "usdCny": 6.6713,
     "source": "api.frankfurter.dev",
@@ -10,14 +10,14 @@
     "status": "ok"
   },
   "stats": {
-    "rankedModels": 387,
-    "apiModels": 1166,
+    "rankedModels": 388,
+    "apiModels": 1164,
     "plans": 40,
     "vendors": 32,
     "domesticModels": 122,
-    "globalModels": 265,
-    "openWeights": 239,
-    "freeApiModels": 53,
+    "globalModels": 266,
+    "openWeights": 240,
+    "freeApiModels": 52,
     "medianOutputPrice": 1,
     "cheapestDomesticPlan": {
       "product": "百度千帆 Token Plan",
@@ -27,7 +27,7 @@
     "topModel": {
       "name": "Gemini 4 Carbon",
       "vendor": "Google",
-      "score": 1540.04
+      "score": 1539.08
     },
     "platformVendors": 37,
     "arenaModels": 363,
@@ -40,7 +40,7 @@
       "name": "LMArena Leaderboard",
       "url": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
       "status": "ok",
-      "checkedAt": "2026-11-07T02:19:51.734Z",
+      "checkedAt": "2026-11-08T01:46:37.764Z",
       "note": "文本 / 代码 / Agent 三个社区盲测榜；CC BY 4.0；经 HF 镜像抓取"
     },
     {
@@ -48,7 +48,7 @@
       "name": "LiteLLM Model Prices",
       "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
       "status": "ok",
-      "checkedAt": "2026-11-07T02:19:51.179Z",
+      "checkedAt": "2026-11-08T01:46:37.215Z",
       "note": "单模型公开标价、上下文、模态与工具能力；MIT；按模型去重"
     },
     {
@@ -56,7 +56,7 @@
       "name": "USD → CNY 汇率",
       "url": "https://api.frankfurter.dev/v1/latest?base=USD&symbols=CNY",
       "status": "ok",
-      "checkedAt": "2026-11-07T02:19:51.839Z",
+      "checkedAt": "2026-11-08T01:46:37.831Z",
       "note": "1 USD ≈ 6.6713 CNY（api.frankfurter.dev，ECB 参考汇率）"
     },
     {
@@ -64,7 +64,7 @@
       "name": "Pelican SVG Drawings",
       "url": "https://huggingface.co/datasets/sergiopaniego/pelican-svg-drawings",
       "status": "ok",
-      "checkedAt": "2026-11-07T02:19:51.469Z",
+      "checkedAt": "2026-11-08T01:46:37.508Z",
       "note": "7 个模型 × 约 20 次鹈鹕 SVG；Apache-2.0"
     },
     {
