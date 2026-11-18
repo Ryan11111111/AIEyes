@@ -1,24 +1,24 @@
 {
-  "generatedAt": "2026-11-17T04:44:39.560Z",
-  "nextRefreshAt": "2026-11-17T22:10:00.000Z",
+  "generatedAt": "2026-11-18T03:50:00.290Z",
+  "nextRefreshAt": "2026-11-18T22:10:00.000Z",
   "timezone": "Asia/Shanghai",
   "upstreamUpdatedAt": "2026-11-15T00:00:00.000Z",
   "fx": {
-    "usdCny": 6.6665,
+    "usdCny": 6.6661,
     "source": "api.frankfurter.dev",
-    "date": "2026-11-16",
+    "date": "2026-11-17",
     "status": "ok"
   },
   "stats": {
     "rankedModels": 392,
-    "apiModels": 1193,
+    "apiModels": 1202,
     "plans": 40,
     "vendors": 33,
     "domesticModels": 122,
     "globalModels": 270,
     "openWeights": 241,
-    "freeApiModels": 52,
-    "medianOutputPrice": 1,
+    "freeApiModels": 54,
+    "medianOutputPrice": 1.05,
     "cheapestDomesticPlan": {
       "product": "百度千帆 Token Plan",
       "price": 9.9,
@@ -40,7 +40,7 @@
       "name": "LMArena Leaderboard",
       "url": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
       "status": "ok",
-      "checkedAt": "2026-11-17T04:44:39.466Z",
+      "checkedAt": "2026-11-18T03:50:00.192Z",
       "note": "文本 / 代码 / Agent 三个社区盲测榜；CC BY 4.0；经 HF 镜像抓取"
     },
     {
@@ -48,7 +48,7 @@
       "name": "LiteLLM Model Prices",
       "url": "https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json",
       "status": "ok",
-      "checkedAt": "2026-11-17T04:44:38.958Z",
+      "checkedAt": "2026-11-18T03:49:59.723Z",
       "note": "单模型公开标价、上下文、模态与工具能力；MIT；按模型去重"
     },
     {
@@ -56,15 +56,15 @@
       "name": "USD → CNY 汇率",
       "url": "https://api.frankfurter.dev/v1/latest?base=USD&symbols=CNY",
       "status": "ok",
-      "checkedAt": "2026-11-17T04:44:39.560Z",
-      "note": "1 USD ≈ 6.6665 CNY（api.frankfurter.dev，ECB 参考汇率）"
+      "checkedAt": "2026-11-18T03:50:00.290Z",
+      "note": "1 USD ≈ 6.6661 CNY（api.frankfurter.dev，ECB 参考汇率）"
     },
     {
       "id": "pelican",
       "name": "Pelican SVG Drawings",
       "url": "https://huggingface.co/datasets/sergiopaniego/pelican-svg-drawings",
       "status": "ok",
-      "checkedAt": "2026-11-17T04:44:39.157Z",
+      "checkedAt": "2026-11-18T03:50:00.052Z",
       "note": "7 个模型 × 约 20 次鹈鹕 SVG；Apache-2.0"
     },
     {
